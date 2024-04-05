@@ -1,0 +1,111 @@
+.type-section h2,
+.picture-section h2,
+.memo-section h2 {
+    margin-top: 40px; /* 增加距离 */
+    text-align: center; /* 确保标题居中对齐 */
+}
+
+/*arrow*/
+.image-container {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center-align items vertically */
+    justify-content: flex-start; /* Align items to the start of the container */
+}
+
+
+
+.back-link {
+    color: #6078E0;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px; /* Add some space between the back arrow and the "Diaper" text */
+    /* Remove any positioning or transform properties that conflict with flexbox */
+}
+/*按钮*/
+.center-container{
+    text-align:center;
+}
+/* 这里假设 .type-section 为包裹标题和按钮的容器 */
+.type-section {
+    text-align: center; /* 这将使其中的内容居中 */
+    padding-top: 20px;
+}
+
+/* 由于我们将按钮居中，可能不需要在 .button-group 上设置margin-top */
+.button-group {
+    text-align: center;;
+    display: inline-block; /* 改为inline-block，让容器的宽度适应内容 */
+    margin-top: 10px; /* 设置一个小的margin-top确保有些空间在"Type"标题下面 */
+    /* 注意：根据您的设计，您可能需要调整这个值 */
+}
+
+/* 为每个按钮设置样式 */
+.button {
+    padding: 8px 16px; /* 适当的填充 */
+    margin: 0 4px; /* 按钮之间的水平间距 */
+    font-size: 16px; /* 字体大小可以根据需要进行调整 */
+    border: 2px solid #ccc; /* 边框样式 */
+    border-radius: 8px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    background-color: #fff; /* 按钮的背景色 */
+    color: #333; /* 按钮的文本色 */
+}
+
+.button:hover {
+    background-color: #6078E0; /* 鼠标悬停时的背景色 */
+    color: #fff; /* 鼠标悬停时的文本色 */
+    border-color: #6078E0; /* 鼠标悬停时的边框色 */
+}
+
+.button-selected {
+    background-color: #6078E0; /* 被选中按钮的背景色 */
+    color: #fff; /* 文本颜色 */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* 边框颜色 */
+    /* 其他样式 */
+}
+
+/*图片上传*/
+.upload-container {
+    border: 2px dashed #6078E0;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px; /* 添加图片上传区域顶部间距 */
+}
+  .custom-file-upload {
+    color: #6078E0;
+    display: inline-block;
+    padding: 6px 12px;
+  }
+  
+  /* 隐藏真实的文件上传输入 */
+  #file-upload {
+    display: none;
+  }
+  
+  /* 预览图像的样式 */
+  #preview img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+
+.memo-section {
+    margin: 20px;
+}
+
+.memo-section h2 {
+    /* 根据您的需求调整 */
+}
+
+#memo-input {
+    width: 100%; /* 宽度占满父容器 */
+    height: 100px; /* 初始高度，根据需要调整 */
+    border: 2px solid #6078E0; /* 边框颜色匹配您的设计 */
+    border-radius: 8px; /* 圆角边框 */
+    padding: 10px; /* 内边距 */
+    font-size: 16px; /* 字体大小，根据需要调整 */
+    box-sizing: border-box; /* 确保边框和内边距不会扩大文本框 */
+    resize: vertical; /* 允许垂直调整大小，或者none禁止调整 */
+}

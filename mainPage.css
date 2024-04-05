@@ -1,0 +1,19 @@
+.center-container {
+  position: relative; /* This allows absolute positioning relative to this container */
+  text-align: center; /* Center-align the content */
+}
+
+.image-container {
+  display: inline-block; /* Or 'block' depending on your design */
+  position: relative; /* Relative position for the icon to be absolutely positioned within */
+}
+
+.add-button {
+  position: absolute;
+  bottom: 70px; /* Adjust this value to match where you want the icon */
+  left: 50%; /* Start with 50% to center, then adjust if necessary */
+  transform: translateX(-50%); /* This centers the icon with respect to its width */
+  /* Set the size of the icon if needed */
+  width: 48px;
+  height: 48px;
+}
