@@ -1,7 +1,7 @@
 .type-section h2,
 .picture-section h2,
 .memo-section h2 {
-    margin-top: 40px; /* 增加距离 */
+    margin-top: 0px; /* 增加距离 */
     text-align: center; /* 确保标题居中对齐 */
 }
 

@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let newFamilyButton = document.getElementById('newFamilyButton');
 
+    let confirmButton = document.getElementById('confirmButton');
+    let addButton = document.getElementById('addButton');
+    let diaperIcon = document.getElementById('diaperIcon');
+
     if (loginButton) {
         loginButton.addEventListener('click', function() {
             window.location.href = 'loginPage.html';
@@ -39,8 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if(addButton){
-        confirmation.addEventListener('click', function(){
+        addButton.addEventListener('click', function(){
             window.location.href = "addRecord.html";
+        });
+    }
+
+    if(diaperIcon){
+        diaperIcon.addEventListener('click', function(){
+            window.location.href = "recordDiaper.html";
         });
     }
 

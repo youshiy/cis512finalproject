@@ -6,40 +6,36 @@
     <title>Main Page - Baby Care</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="recordDiaper.css">
-    <script src="navigation.js" defer></script>
+    <script src="navagation.js" defer></script>
     <script src="recordDiaper.js" defer></script>
-
 </head>
 <body>
     <div class="center-container">
         <div class="image-container">
             <a href="addRecord.html" class="back-link">&#8592;Back</a>
             <img src="images/RecordDiaper.svg" alt="Record Diaper Header"/>
-            <!-- The anchor tag now wraps the image, making it clickable -->  
-     
+            <!-- The anchor tag now wraps the image, making it clickable -->
+        </div>
 
-<div class="type-section">
-    <div class="button-group">
-        <button class="button">Poo</button>
-        <button class="button">Pee</button>
-        <button class="button">Both</button>
+        <div class="type-section">
+            <div class="button-group">
+                <button class="button">Poo</button>
+                <button class="button">Pee</button>
+                <button class="button">Both</button>
+            </div>
+        </div>
+
+        <div class="upload-container">
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Add Photo
+            </label>
+            <input id="file-upload" type="file" style="display:none;" onchange="previewImage(event)" />
+        </div>
+        <div id="preview"></div>
+
+        <div class="memo-section">
+            <textarea placeholder="What's the color, smell...?" id="memo-input"></textarea>
+        </div>
     </div>
-</div>
-
-<div class="upload-container">
-    <label for="file-upload" class="custom-file-upload">
-      <i class="fa fa-cloud-upload"></i> Add Photo
-    </label>
-    <input id="file-upload" type="file" style="display:none;" onchange="previewImage(event)" />
-  </div>
-  <div id="preview"></div>
-
-  <div class="memo-section">
-    <textarea placeholder="What's the color, smell...?" id="memo-input"></textarea>
-</div>
-</div> 
-
-</div>
 </body>
 </html>
-
