@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let confirmButton = document.getElementById('confirmButton');
     let addButton = document.getElementById('addButton');
     let diaperIcon = document.getElementById('diaperIcon');
+    let confirmDiaperButton = document.getElementById('confirmDiaperButton');
+    let loginToMain = document.getElementById('loginToMain');
 
     if (loginButton) {
         loginButton.addEventListener('click', function() {
@@ -53,5 +55,18 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = "recordDiaper.html";
         });
     }
+
+    if(confirmDiaperButton){
+        confirmDiaperButton.addEventListener('click', function(){
+            window.location.href = "newAddedDiaper.html";
+        });
+    }
+
+    if(loginToMain){
+        loginToMain.addEventListener('click', function(){
+            window.location.href = "mainPage.html";
+        });
+    }
+
 
 });
